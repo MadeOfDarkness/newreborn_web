@@ -104,6 +104,45 @@ section.botones {
   }
 }
 
+section.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    font-size: 24px;    
+    color: transparent;
+    -webkit-text-stroke: 0.5px white;
+    -webkit-text-stroke-width: thin;
+    margin: 0 1rem;
+  }
+
+  .f:hover {
+    color: #3B5998;
+    -webkit-text-stroke: 0px;
+  }
+
+  .i:hover {
+    color: #C13584;
+    -webkit-text-stroke: 0px;
+  }
+
+  .t:hover {
+    color: #00acee;
+    -webkit-text-stroke: 0px;
+  }
+
+  .l:hover {
+    color: #0e76a8;
+    -webkit-text-stroke: 0px;
+  }
+
+  .y:hover {
+    color: #c4302b;
+    -webkit-text-stroke: 0px;
+  }
+}
+
 footer {
   display: flex;
   flex-direction: column;
