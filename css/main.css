@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: url("https://i.imgur.com/8bFb5Me.png") center no-repeat;
+  background-size: contain;
+  background-color: #FFDE00;
+  width: 100vw;
+}
+
+@media only screen and (max-width: 850px) {
+  body {
+    background: url("https://i.imgur.com/GCWZ6ou.png") center no-repeat;
+    background-size: cover;
+    background-color: #FFDE00;
+    width: 100vw;
+  }
+}
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section.hero .info-nrw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.hero .info-nrw .foto-nrw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+section.hero .info-nrw .foto-nrw img {
+  width: 150px;
+  height: 148px;
+  background: #D2001A;
+  border-radius: 50%;
+  box-shadow: #533483 5px 8px 0px;
+}
+section.hero .info-nrw .foto-nrw img:hover {
+  box-shadow: none;
+  transform: translate(5px, 8px);
+}
+section.hero .info-nrw .textos-nrw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.hero .info-nrw .textos-nrw h1 {
+  font-size: 18px;
+  text-align: center;
+}
+section.hero .info-nrw .textos-nrw p {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+section.botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.botones a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  background: #16213E;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: #533483 10px 8px 0px;
+}
+section.botones a:hover {
+  box-shadow: none;
+  transform: translate(10px, 8px);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer img {
+  border-radius: 50%;
+  width: 50px;
+  margin-bottom: 5px;
+}
+footer p {
+  font-size: 14px;
+  font-weight: 600;
+}/*# sourceMappingURL=main.css.map */
