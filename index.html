@@ -8,17 +8,23 @@
   <title>NewReborn - Web | Portal</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script src="https://kit.fontawesome.com/e6a4971ebb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body>
   <header>
-    
+    <nav>
+      <p id="texto-copiar">¡Desarrolla tu aplicación web con NewReborn - Web!
+        Da clic al enlance de abajo 👇 para más detalles:
+        https://www.newrebornweb.info</p>
+      <i id="btn" onclick="copyToClickBoard()" class="fa-regular fa-share-from-square"></i>
+    </nav>
   </header>
   <main>
     <section class="hero">
       <div class="info-nrw">
         <div class="foto-nrw">
-          <img src="https://i.imgur.com/mP0001M.png" alt="Luis Montaño, creador de NewReborn - Web"/>
+          <img src="https://i.imgur.com/mP0001M.png" alt="Luis Montaño, creador de NewReborn - Web" />
         </div>
         <div class="textos-nrw">
           <h1>@newrebornweb</h1>
@@ -27,25 +33,59 @@
       </div>
     </section>
     <section class="botones">
-      <a href="pdf-2.pdf" download="NewReborn - Web CV" target="_blank"><i class="fa-solid fa-arrow-down"></i>&nbsp;Descargar CV</a>
-      <a href="https://www.domestika.org/es/newrebornweb" target="_blank"><i class="fa-solid fa-file-lines"></i>&nbsp;Perfil domestika</a>
-      <a href="https://github.com/NewRebornWeb" target="_blank"><i class="fa-brands fa-github"></i>&nbsp;Proyectos realizados</a>
-      <a href="https://www.figma.com/@newrebornweb" target="_blank"><i class="fa-brands fa-figma"></i>&nbsp;Diseños en figma</a>
-      <a href="https://es.fiverr.com/newreborn" target="_blank"><i class="fa-sharp fa-solid fa-briefcase"></i>&nbsp;Contrata mis servicios</a>
+      <a href="pdf-2.pdf" download="NewReborn - Web CV" target="_blank"><i
+          class="fa-solid fa-arrow-down"></i>&nbsp;Descargar CV</a>
+      <a href="https://www.domestika.org/es/newrebornweb" target="_blank"><i
+          class="fa-solid fa-file-lines"></i>&nbsp;Perfil domestika</a>
+      <a href="https://github.com/NewRebornWeb" target="_blank"><i class="fa-brands fa-github"></i>&nbsp;Proyectos
+        realizados</a>
+      <a href="https://www.figma.com/@newrebornweb" target="_blank"><i class="fa-brands fa-figma"></i>&nbsp;Diseños en
+        figma</a>
+      <a href="https://es.fiverr.com/newreborn" target="_blank"><i
+          class="fa-sharp fa-solid fa-briefcase"></i>&nbsp;Contrata mis servicios</a>
     </section>
     <section class="redes-sociales">
-      <a class="f" target="_blank" href="https://www.facebook.com/newrebornweb"><i class="fa-brands fa-facebook"></i></a>
-      <a class="i" target="_blank" href="https://www.instagram.com/newrebornweb/"><i class="fa-brands fa-instagram"></i></a>
+      <a class="f" target="_blank" href="https://www.facebook.com/newrebornweb"><i
+          class="fa-brands fa-facebook"></i></a>
+      <a class="i" target="_blank" href="https://www.instagram.com/newrebornweb/"><i
+          class="fa-brands fa-instagram"></i></a>
       <a class="t" target="_blank" href="https://twitter.com/newrebornweb"><i class="fa-brands fa-twitter"></i></a>
-      <a class="l" target="_blank" href="https://www.linkedin.com/in/newrebornweb/"><i class="fa-brands fa-linkedin"></i></a>
-      <a class="y" target="_blank" href="https://www.youtube.com/channel/UCj6muHqcQNO9R_LRvxSBJCg"><i class="fa-brands fa-youtube"></i></a>
+      <a class="l" target="_blank" href="https://www.linkedin.com/in/newrebornweb/"><i
+          class="fa-brands fa-linkedin"></i></a>
+      <a class="y" target="_blank" href="https://www.youtube.com/channel/UCj6muHqcQNO9R_LRvxSBJCg"><i
+          class="fa-brands fa-youtube"></i></a>
     </section>
     <footer>
       <img src="https://i.imgur.com/X5415Do.png" alt="Logo de NewReborn - Web">
       <p>Desarrollado por NewReborn - Web</p>
     </footer>
   </main>
-  
+
+  <script>
+    function copyToClickBoard() {
+      var content = document.getElementById("texto-copiar").innerHTML;
+
+      navigator.clipboard
+        .writeText(content)
+        .then(() => {
+          Toastify({
+            text: "¡Copiado al portapapeles!",
+            duration: 3000,
+            position: "center",
+            style: {
+              background: "#eeeeee",
+              color: "black",
+              fontSize: "12px",
+            },
+          }).showToast();
+          console.log("Text copied to clipboard...");
+        })
+        .catch((err) => {
+          console.log("Something went wrong", err);
+        });
+    }
+  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>
